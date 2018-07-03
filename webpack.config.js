@@ -30,7 +30,7 @@ module.exports = {
 			Nav: 'app/components/Nav.jsx',
 			Home: 'app/components/Home.jsx',
 			Map: 'app/components/Map.jsx',
-			MyMapComponent: 'app/components/MyMapComponent.jsx',
+			MapComponent: 'app/components/MapComponent.jsx',
 			applicationStyles: 'app/styles/app.scss'
 		},
 		extensions: ['', '.js', '.jsx']

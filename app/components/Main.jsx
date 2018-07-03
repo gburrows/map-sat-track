@@ -1,24 +1,20 @@
-const React = require('react');
-const Nav = require('Nav');
+import React from 'react';
+import Nav from 'Nav';
 
-
-const Main = (props) => {
-
-	return (
-		<div>
+class Main extends React.PureComponent {
+	render () {
+		return (
+			<div>
 				<Nav/>
 				<div className="row">
 					<div className="columns medium-8 large-12 small-centered">
 						<p>Main.jsx rendered</p>
-						{props.children}
+						{this.props.children}
 					</div>
 				</div>
-		</div>
-	)
-};
+			</div>
+		)
+	}
+}
 
-Main.defaultProps = {
-	color: {shade: Main, type: 'green', thing: 'blue'}
-};
-
-module.exports = Main;
+export default Main;
